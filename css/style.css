@@ -1,1 +1,94 @@
 /* Ini CSS */
+
+.main-header {
+    text-align: center;
+}
+
+.section-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.selection-btn {
+    height: 3em;
+    border: none;
+    border-radius: 5px;
+}
+
+.blue-color {
+    background-color: rgb(70, 70, 255);
+    color: white;
+}
+
+.grey-color {
+    background-color: rgb(190, 190, 190);
+    color: rgb(70, 70, 255);
+}
+
+.tittle-content {
+    height: 5rem;
+    background-color: rgb(70, 70, 255);
+    color: white;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.luas-segitiga-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.luas-segitiga-img {
+    height: 300px;
+    width: 300px;
+    background-image: url(https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.header-form {
+    text-align: center;
+}
+
+.alas-segitiga {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alas-segitiga input {
+    width: 65%;
+    height: 1.5rem;
+}
+
+.panjang-segitiga {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panjang-segitiga input {
+    width: 65%;
+    height: 1.5rem;
+}
+
+input[type=number] {
+    margin: 8px 0;
+
+}
+
+.section {
+    display: flex;
+}
+
+.aside-luas {
+    flex: 1;
+}
+
+.aside-keliling {
+    flex: 1;
+}
