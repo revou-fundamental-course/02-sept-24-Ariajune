@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="css\style.css">
+
+<!-- Link Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<!-- End Link Font -->
+
 <body>
 
     <!-- Start Header -->
@@ -22,19 +33,33 @@
     <main>
         
         <section class="section-button">
-            <button href="#" type="button" class="selection-btn blue-color">Segitiga</button>
-            <button href="#" type="button" class="selection-btn grey-color">Jajar Genjang</button>
+            <a href="#segitiga">
+                <button type="button" class="selection-btn grey-color">Segitiga</button>
+            </a>
+            <a href="#jajargenjang">
+                <button type="button" class="selection-btn grey-color">Jajar Genjang</button>
+            </a>
         </section>
 
-        <section class="section">
+
+        <!-- Area Segitiga -->
+        <section class="section" id="segitiga">
             <aside class="aside-luas">
-                <header class="tittle-content">
+                <header class="luas-tittle-content">
                     <h1>Luas Segitiga</h1>
                 </header>
 
                 <article class="luas-segitiga-content">
                     <div class="luas-segitiga-img"></div>
                     <p>Rumus Luas Segitiga</p>
+                    <p class="rumus">L = 1/2 x a x t</p>
+                    <p>Dimana: 
+                        <ul>
+                            <li>L = Luas</li>
+                            <li>a = Panjang Alas</li>
+                            <li>t = Tinggi</li>
+                        </ul>
+                    </p>
                 </article>
 
                 <form action="">
@@ -44,11 +69,11 @@
 
                     <div class="alas-segitiga">
                         <label for="panjang-alas">Panjang Alas</label>
-                        <input type="num" id="panjang-alas">
+                        <input type="num" id="panjang-alas-sg">
                     </div>
                     <div class="panjang-segitiga">
                         <label for="tinggi">Tinggi</label>
-                        <input type="number" id="tinggi">
+                        <input type="number" id="tinggi-sg">
                     </div>
 
                     <p id="result">Hasil Perhitungan</p>
@@ -59,27 +84,134 @@
             </aside>
 
             <aside class="aside-keliling">
-                <header class="tittle-content">
-                    <h1>Luas Segitiga</h1>
+                <header class="keliling-tittle-content">
+                    <h1>Keliling Segitiga</h1>
                 </header>
 
-                <article class="luas-segitiga-content">
-                    <div class="luas-segitiga-img"></div>
-                    <p>Rumus Luas Segitiga</p>
+                <article class="keliling-segitiga-content">
+                    <div class="keliling-segitiga-img"></div>
+                    <p>Rumus Keliling Segitiga</p>
+                    <p class="rumus">K= S1 + S2 + a</p>
+                    <p>Dimana: 
+                        <ul>
+                            <li>K = Keliling</li>
+                            <li> S1 = S1 / sisi </li>
+                            <li> S2 = S2 / sisi 2</li>
+                            <li>a = Alas</li>
+                        </ul>
+                    </p>
                 </article>
 
                 <form action="">
                     <header class="header-form">
-                        <h1>Hitung Luas Segitiga</h1>
+                        <h1>Hitung Keliling Segitiga</h1>
                     </header>
 
-                    <div class="alas-segitiga">
-                        <label for="panjang-alas">Panjang Alas</label>
-                        <input type="num" id="panjang-alas">
+                    <div class="sisi1-segitiga">
+                        <label for="sisi1">S1</label>
+                        <input type="number" id="sisi1-sg">
                     </div>
-                    <div class="panjang-segitiga">
+                    <div class="sisi2-segitiga">
+                        <label for="sisi2">S2</label>
+                        <input type="number" id="sisi2-sg">
+                    </div>
+                    <div class="sisi3-segitiga">
+                        <label for="sisi3">Alas</label>
+                        <input type="number" id="sisi3-sg">
+                    </div>
+
+                    <p id="result">Hasil Perhitungan</p>
+
+                    <button>Hitung</button>
+                </form>
+
+            </aside>
+        
+        </section>
+        <!-- Area Segitiga -->
+
+        <!-- Area Jajar Genjang -->
+
+        <section class="section" id="jajargenjang">
+            <aside class="aside-luas">
+                <header class="luas-tittle-content">
+                    <h1>Luas Jajar Genjang</h1>
+                </header>
+
+                <article class="luas-jajargenjang-content">
+                    <div class="luas-jajargenjang-img"></div>
+                    <p>Rumus Luas Jajar Genjang</p>
+                    <p class="rumus">L = a x t</p>
+                    <p>Dimana: 
+                        <ul>
+                            <li>L = Luas</li>
+                            <li>a = Panjang Alas</li>
+                            <li>t = Tinggi</li>
+                        </ul>
+                    </p>
+                </article>
+
+                <form action="">
+                    <header class="header-form">
+                        <h1>Hitung Luas Jajar Genjang</h1>
+                    </header>
+
+                    <div class="alas-jajargenjang">
+                        <label for="panjang-alas">Panjang Alas</label>
+                        <input type="num" id="panjang-alas-jg">
+                    </div>
+                    <div class="panjang-jajargenjang">
                         <label for="tinggi">Tinggi</label>
-                        <input type="number" id="tinggi">
+                        <input type="number" id="tinggi-jg">
+                    </div>
+
+                    <p id="result">Hasil Perhitungan</p>
+
+                    <button>Hitung</button>
+                </form>
+
+            </aside>
+
+            <aside class="aside-keliling">
+                <header class="keliling-tittle-content">
+                    <h1>Keliling Jajar Genjang</h1>
+                </header>
+
+                <article class="keliling-jajargenjang-content">
+                    <div class="keliling-jajargenjang-img"></div>
+                    <p>Rumus Keliling jajar Genjang</p>
+                    <p class="rumus">K = AB + BC + CD +DA</p>
+                    <p>Dimana: 
+                        <ul>
+                            <li>K = Keliling</li>
+                            <li>AB = AB</li>
+                            <li>BC = BC</li>
+                            <li>CD = CD</li>
+                            <li>DA = DA</li>
+                        </ul>
+                    </p>
+                </article>
+
+                <form action="">
+                    <header class="header-form">
+                        <h1>Hitung Keliling Jajar Genjang</h1>
+                    </header>
+
+                    <div class="sisi1-jajargenjang">
+                        <label for="sisi1">AB</label>
+                        <input type="number" id="sisi1-jg">
+                    </div>
+                    <div class="sisi2-jajargenjang">
+                        <label for="sisi2">BC</label>
+                        <input type="number" id="sisi2-jg">
+                    </div>
+                    <div class="sisi3-jajargenjang">
+                        <label for="sisi3">CD</label>
+                        <input type="number" id="sisi3-jg">
+                    </div>
+                    <div class="sisi4-jajargenjang">
+                        <label for="sisi4">DA</label>
+                        <input type="number" id="sisi4-jg">
                     </div>
 
                     <p id="result">Hasil Perhitungan</p>
@@ -91,10 +223,14 @@
         
         </section>
 
+        <!-- Area Jajar Genjang -->
+
     </main>
 
     <!-- End Main -->
 
+
+<script src="js\script.js"></script>
     
 </body>
 </html>
