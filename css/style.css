@@ -287,19 +287,7 @@ form button {
         font-size: 14px; /* Mengurangi ukuran font tombol */
     }
 
-    /* Menyesuaikan ukuran gambar */
-    .luas-segitiga-img,
-    .keliling-segitiga-img,
-    .luas-jajargenjang-img,
-    .keliling-jajargenjang-img {
-        width: 100%;
-        height: auto; /* Menjaga rasio aspek gambar */
-        background-size: cover; /* Menjaga gambar menutupi elemen */
-        background-position: center; /* Memusatkan gambar */
-        margin-top: 20px;
-        border-radius: 20px;
-        display: block; /* Pastikan gambar tampil */
-    }
+
 
     /* Menyesuaikan form */
     .alas-segitiga, .panjang-segitiga, .alas-jajargenjang, .panjang-jajargenjang,
