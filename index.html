@@ -23,7 +23,7 @@
 
     <header class="main-header">
         <h1>Welcome To Katik</h1>
-        <p>Hi Sobat, Selamat Datang di Katik:)</p>
+        <p>Hi Sobat, Selamat Datang di Kalkulator Matematik;)</p>
     </header>
 
     <!-- End Header -->
@@ -35,7 +35,6 @@
         <section class="section-button">
             <a href="#segitiga">
                 <button type="button" class="selection-btn grey-color">Segitiga</button>
-            </a>
             <a href="#jajargenjang">
                 <button type="button" class="selection-btn grey-color">Jajar Genjang</button>
             </a>
@@ -69,7 +68,7 @@
 
                     <div class="alas-segitiga">
                         <label for="panjang-alas">Panjang Alas</label>
-                        <input type="num" id="panjang-alas-sg">
+                        <input type="number" id="panjang-alas-sg">
                     </div>
                     <div class="panjang-segitiga">
                         <label for="tinggi">Tinggi</label>
@@ -78,7 +77,13 @@
 
                     <p id="result">Hasil Perhitungan</p>
 
-                    <button>Hitung</button>
+                    <div id="output-luas-sg" style="display: none;">
+                        <p>L = 1/2 x a x t</p>
+                        <p>L = 1/2 x <span id="input-alas"></span> x <span id="input-tinggi"></span></p>
+                        <p>L = <span id="luas-sg"></span></p>
+                    </div>
+
+                    <button id="hitung-luas-sg">Hitung</button>
                 </form>
 
             </aside>
@@ -117,12 +122,18 @@
                     </div>
                     <div class="sisi3-segitiga">
                         <label for="sisi3">Alas</label>
-                        <input type="number" id="sisi3-sg">
+                        <input type="number" id="alas-sg">
                     </div>
 
                     <p id="result">Hasil Perhitungan</p>
 
-                    <button>Hitung</button>
+                    <div id="output-kll-sg" style="display: none;">
+                        <p>K = S1 + S2 + a</p>
+                        <p>K = <span id="input-sisi1-sg"></span> + <span id="input-sisi2-sg"></span> + <span id="input-alas-sg"></span></p>
+                        <p>K = <span id="kll-sg"></span></p>
+                    </div>
+
+                    <button id="hitung-kll-sg">Hitung</button>
                 </form>
 
             </aside>
@@ -158,7 +169,7 @@
 
                     <div class="alas-jajargenjang">
                         <label for="panjang-alas">Panjang Alas</label>
-                        <input type="num" id="panjang-alas-jg">
+                        <input type="number" id="alas-jg">
                     </div>
                     <div class="panjang-jajargenjang">
                         <label for="tinggi">Tinggi</label>
@@ -167,7 +178,13 @@
 
                     <p id="result">Hasil Perhitungan</p>
 
-                    <button>Hitung</button>
+                    <div id="output-luas-jg" style="display: none;">
+                        <p>L = a x t</p>
+                        <p>L = <span id="input-alas-jg"></span> x <span id="input-tinggi-jg"></span></p>
+                        <p>L = <span id="luas-jg"></span></p>
+                    </div>
+
+                    <button id="hitung-luas-jg">Hitung</button>
                 </form>
 
             </aside>
@@ -199,24 +216,29 @@
 
                     <div class="sisi1-jajargenjang">
                         <label for="sisi1">AB</label>
-                        <input type="number" id="sisi1-jg">
+                        <input type="number" id="ab-jg">
                     </div>
                     <div class="sisi2-jajargenjang">
                         <label for="sisi2">BC</label>
-                        <input type="number" id="sisi2-jg">
+                        <input type="number" id="bc-jg">
                     </div>
                     <div class="sisi3-jajargenjang">
                         <label for="sisi3">CD</label>
-                        <input type="number" id="sisi3-jg">
+                        <input type="number" id="cd-jg">
                     </div>
                     <div class="sisi4-jajargenjang">
                         <label for="sisi4">DA</label>
-                        <input type="number" id="sisi4-jg">
+                        <input type="number" id="da-jg">
                     </div>
 
                     <p id="result">Hasil Perhitungan</p>
 
-                    <button>Hitung</button>
+                    <div id="output-kll-jg" style="display: none;">
+                        <p>K = AB + BC + CD + DA</p>
+                        <p>K = <span id="input-ab-jg"></span> + <span id="input-bc-jg"></span> + <span id="input-cd-jg"></span> + <span id="input-da-jg"></span></p>
+                        <p>K = <span id="kll-jg"></span>
+                    </div>
+                    <button id="hitung-kll-jg">Hitung</button>
                 </form>
 
             </aside>
