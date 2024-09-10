@@ -264,4 +264,78 @@ form button {
     border: 1px solid cornflowerblue;
 } 
 
+/* Media Queries untuk tampilan mobile */
+@media only screen and (max-width: 768px) {
+
+    /* Menyesuaikan header */
+    .main-header h1 {
+        font-size: 36px; /* Mengurangi ukuran font untuk judul */
+    }
+
+    .main-header p {
+        font-size: 16px; /* Mengurangi ukuran font untuk teks */
+    }
+
+    /* Menyesuaikan tombol */
+    .section-button {
+        flex-direction: column; /* Menyusun tombol secara vertikal */
+    }
+
+    .selection-btn {
+        width: 100%;
+        height: 2.5em; /* Mengurangi tinggi tombol */
+        font-size: 14px; /* Mengurangi ukuran font tombol */
+    }
+
+    /* Menyesuaikan ukuran gambar */
+    .luas-segitiga-img,
+    .keliling-segitiga-img,
+    .luas-jajargenjang-img,
+    .keliling-jajargenjang-img {
+        width: 100%;
+        height: auto; /* Menjaga rasio aspek gambar */
+        background-size: cover; /* Menjaga gambar menutupi elemen */
+        background-position: center; /* Memusatkan gambar */
+        margin-top: 20px;
+        border-radius: 20px;
+        display: block; /* Pastikan gambar tampil */
+    }
+
+    /* Menyesuaikan form */
+    .alas-segitiga, .panjang-segitiga, .alas-jajargenjang, .panjang-jajargenjang,
+    .sisi1-segitiga, .sisi2-segitiga, .sisi3-segitiga, .sisi1-jajargenjang, .sisi2-jajargenjang,
+    .sisi3-jajargenjang, .sisi4-jajargenjang {
+        width: 100%; /* Memperluas form untuk lebar penuh */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .alas-segitiga input, .panjang-segitiga input, .alas-jajargenjang input, .panjang-jajargenjang input,
+    .sisi1-segitiga input, .sisi2-segitiga input, .sisi3-segitiga input, .sisi1-jajargenjang input, .sisi2-jajargenjang input,
+    .sisi3-jajargenjang input, .sisi4-jajargenjang input {
+        width: 100%; /* Memperluas input untuk lebar penuh */
+    }
+
+    /* Menyesuaikan button */
+    form button {
+        width: 100%;
+        height: 2.5em; /* Mengurangi tinggi button */
+    }
+
+    /* Mengatur jarak */
+    .section {
+        flex-direction: column; /* Menyusun bagian secara vertikal */
+    }
+
+    /* Menyesuaikan font-size untuk p dan h1 dalam form */
+    .header-form h1 {
+        font-size: 20px; /* Mengurangi ukuran font untuk judul form */
+    }
+
+    form p, button {
+        font-size: 14px; /* Mengurangi ukuran font untuk teks dan tombol */
+    }
+
+}
+
 
